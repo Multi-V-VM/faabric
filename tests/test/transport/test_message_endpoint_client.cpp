@@ -17,7 +17,7 @@ using namespace faabric::transport;
 namespace tests {
 
 // These tests are unstable under ThreadSanitizer
-#if !(defined(__has_feature) && __has_feature(thread_sanitizer))
+#if 1
 
 TEST_CASE_METHOD(SchedulerFixture, "Test send/recv one message", "[transport]")
 {

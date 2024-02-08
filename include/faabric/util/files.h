@@ -3,6 +3,7 @@
 #include <faabric/util/exception.h>
 #include <string>
 #include <vector>
+#include <stdint.h>
 
 namespace faabric::util {
 std::string readFileToString(const std::string& path);

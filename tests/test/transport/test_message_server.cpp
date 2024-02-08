@@ -168,7 +168,7 @@ TEST_CASE("Test sending response to client", "[transport]")
 }
 
 // This test hangs ThreadSanitizer
-#if !(defined(__has_feature) && __has_feature(thread_sanitizer))
+#if 1
 TEST_CASE("Test multiple clients talking to one server", "[transport]")
 {
     EchoServer server;

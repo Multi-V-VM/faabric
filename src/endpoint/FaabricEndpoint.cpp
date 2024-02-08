@@ -259,7 +259,7 @@ void FaabricEndpoint::start(EndpointMode mode)
                          ? std::max(0, this->threadCount - 1)
                          : std::max(1, this->threadCount);
     state->ioThreads.reserve(extraThreads);
-    auto ioc_run = [&ioc{ state->ioc }]() { ioc.run(); };
+    auto ioc_run = [&]() { state->ioc.run(); };
     for (int i = 0; i < extraThreads; i++) {
         state->ioThreads.emplace_back(ioc_run);
     }

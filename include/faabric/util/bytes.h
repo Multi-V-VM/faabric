@@ -8,7 +8,7 @@
 #include <stdexcept>
 #include <string>
 #include <vector>
-
+#include <stdint.h>
 #include <faabric/util/macros.h>
 
 namespace faabric::util {

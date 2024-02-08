@@ -16,7 +16,7 @@
 #define SPDLOG_ACTIVE_LEVEL 2
 #else
 // Allow all levels in debug build
-#define SPDLOG_ACTIVE_LEVEL 0
+#define SPDLOG_ACTIVE_LEVEL 2
 #endif
 
 #include <spdlog/spdlog.h>
